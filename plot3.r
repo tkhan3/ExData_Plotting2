@@ -28,7 +28,7 @@ png(filename = "C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2\\plot3.png"
     width = 580, height = 480, units = "px",
     bg = "white")
 
-ggplot(plot_df,aes(year,Total,fill=type)) + facet_wrap(~type,nrow=1) + geom_bar(stat="identity") + labs(y=expression("Total " * PM[2.5] * " Emissions")) + labs(x="Year") + labs(title=expression("Total " * PM[2.5] * " Emissions/Year per Type")) +  guides(fill=FALSE) 
+ggplot(plot_df,aes(year,Total,fill=type)) + facet_wrap(~type,nrow=1) + geom_bar(stat="identity") + labs(y=expression("Total " * PM[2.5] * " Emissions")) + labs(x="Year") + labs(title=expression(PM[2.5] * " Emissions from 1998-2008 for each Source in Baltimore")) +  guides(fill=FALSE) 
 
 dev.off()
 

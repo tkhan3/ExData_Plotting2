@@ -24,6 +24,6 @@ png(filename = "plot1.png",
     bg = "white")
 
 ##plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab="Total PM 2Emissions",col="red",main="Total Emission/Year")
-plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions"),col="red",main=expression("Total " * PM[2.5] * "  Emissions/Year Baltimore City"))
+plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions"),col="red",main=expression("Total " * PM[2.5] * "  Emissions/Year in US from 1998-2008"))
 
 dev.off()

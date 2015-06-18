@@ -14,7 +14,6 @@ str(NEI)
 names(NEI)
 names(SCC)
 ## split the dataframe baltimore for each year and emissions drop values which are null
-attach(NEI)
 s <- split(Emissions,year,drop=T)
 v1 <- sapply(s,sum)
 ##open the graphic device to save the plot.

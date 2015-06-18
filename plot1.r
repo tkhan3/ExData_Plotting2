@@ -18,9 +18,12 @@ attach(NEI)
 s <- split(Emissions,year,drop=T)
 v1 <- sapply(s,sum)
 ##open the graphic device to save the plot.
+setwd("C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2")
 png(filename = "plot1.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
 
-plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab="Total Emissions",col="red",main="Total Emission/Year")
+##plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab="Total PM 2Emissions",col="red",main="Total Emission/Year")
+plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions"),col="red",main=expression("Total " * PM[2.5] * "  Emissions/Year Baltimore City"))
+
 dev.off()

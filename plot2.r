@@ -22,13 +22,13 @@ attach(baltimore)
 ## split the dataframe baltimore for each year and emissions drop values which are null
 s <- split(Emissions,year,drop=T)
 v1 <- sapply(s,sum) ##calculate sum for each year 
-##setwd("C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2")
+setwd("C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2")
 ##open the graphic device to save the plot.
 png(filename = "C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2\\plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
 ##generate the plot.
-plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab="Total Emissions",col="red",main="Total Emission/Year Baltimore City")
+plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions"),col="red",main=expression("Total " * PM[2.5] * " Emissions/Year Baltimore City"))
 dev.off()
 
 

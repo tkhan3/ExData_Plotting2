@@ -28,9 +28,8 @@ png(filename = "C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2\\plot3.png"
     width = 580, height = 480, units = "px",
     bg = "white")
 
-final_plot <- ggplot(plot_df,aes(year,Total,fill=type)) + facet_wrap(~type,nrow=1) + geom_bar(stat="identity") + labs(y=expression("Total " * PM[2.5])) + labs(x="Year") + labs(title="Total PM 2.5/Year per Type") +  guides(fill=FALSE) 
+ggplot(plot_df,aes(year,Total,fill=type)) + facet_wrap(~type,nrow=1) + geom_bar(stat="identity") + labs(y=expression("Total " * PM[2.5] * " Emissions")) + labs(x="Year") + labs(title="Total PM 2.5 Emissions/Year per Type") +  guides(fill=FALSE) 
 
-print(final_plot)
 dev.off()
 
  

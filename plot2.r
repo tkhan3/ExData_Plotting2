@@ -28,7 +28,7 @@ png(filename = "C:\\Data Science\\ExData_Plotting2\\ExData_Plotting2\\plot2.png"
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
 ##generate the plot.
-plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions"),col="red",main=expression("Total " * PM[2.5] * " Emissions in Baltimore City from 1998-2008"))
+plot(names(v1),v1,type="l",xlim=c(1999,2008),xlab="Year",ylab=expression("Total " * PM[2.5] * " Emissions (Tons)"),col="red",main=expression("Total " * PM[2.5] * " Emissions in Baltimore for 1998-2008"))
 dev.off()
 
 
